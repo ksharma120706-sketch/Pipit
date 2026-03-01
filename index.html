@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PipIt – Play More. Smile More.</title>
+    <meta name="description"
+        content="PipIt is a premium toy store for kids of all ages. Discover plush friends, educational toys, fun games, and more with free shipping on all orders.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Custom Cursor -->
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-follower" id="cursor-follower"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="logo">
+            <span class="logo-pip">Pip</span><span class="logo-it">It</span>
+            <div class="logo-dot"></div>
+        </div>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="#home" class="nav-link">Home</a></li>
+            <li><a href="#shop" class="nav-link">Shop</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <button class="burger" id="burger" aria-label="Toggle navigation">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+        </button>
+    </nav>
+
+    <!-- ═══════════════════════════════════════ HERO ═══ -->
+    <section id="home" class="hero">
+
+        <!-- Floating background blobs -->
+        <div class="bg-blob blob-a"></div>
+        <div class="bg-blob blob-b"></div>
+        <div class="bg-blob blob-c"></div>
+
+        <!-- Floating decorative toys (CSS art) -->
+        <div class="deco-toy deco-star" aria-hidden="true">★</div>
+        <div class="deco-toy deco-heart" aria-hidden="true">♥</div>
+        <div class="deco-toy deco-circle" aria-hidden="true"></div>
+        <div class="deco-toy deco-ring" aria-hidden="true"></div>
+
+        <div class="hero-content reveal">
+            <div class="hero-tag">✨ Premium Toys for Bright Minds</div>
+            <h1>Play More.<br><span class="gradient-text">Smile More.</span></h1>
+            <p>Curated, safe, and endlessly fun toys designed to spark imagination, inspire learning, and create
+                brand-new adventures — every single day.</p>
+            <div class="hero-cta-group">
+                <a href="#shop" class="btn-primary ripple">Shop Now</a>
+                <a href="#about" class="btn-ghost">Our Story →</a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat"><span class="stat-num">500+</span><span class="stat-label">Joyful Toys</span></div>
+                <div class="stat-divider"></div>
+                <div class="stat"><span class="stat-num">50K+</span><span class="stat-label">Happy Kids</span></div>
+                <div class="stat-divider"></div>
+                <div class="stat"><span class="stat-num">100%</span><span class="stat-label">Safety Certified</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-visual reveal reveal-right">
+            <!-- Main hero toy illustration (pure CSS) -->
+            <div class="hero-toy-scene">
+                <!-- Main rocket toy -->
+                <div class="toy-rocket float-anim">
+                    <div class="rocket-body">
+                        <div class="rocket-window"></div>
+                    </div>
+                    <div class="rocket-fin rocket-fin-l"></div>
+                    <div class="rocket-fin rocket-fin-r"></div>
+                    <div class="rocket-flame"></div>
+                </div>
+
+                <!-- Orbiting star -->
+                <div class="orbit-ring">
+                    <div class="orbit-star">⭐</div>
+                </div>
+
+                <!-- Small floating items -->
+                <div class="float-item item-bear float-anim-2">🧸</div>
+                <div class="float-item item-rainbow float-anim-3">🌈</div>
+                <div class="float-item item-balloon float-anim">🎈</div>
+                <div class="float-item item-puzzle float-anim-2">🧩</div>
+                <div class="float-item item-star float-anim-3">⭐</div>
+
+                <!-- Circle under rocket -->
+                <div class="hero-circle"></div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- ══════════════════════════════════════ FEATURES STRIP ═══ -->
+    <div class="features-strip">
+        <div class="feature-item reveal">
+            <span class="feature-icon">🚚</span>
+            <div><strong>Free Shipping</strong><span>On all orders</span></div>
+        </div>
+        <div class="feature-item reveal">
+            <span class="feature-icon">🛡️</span>
+            <div><strong>Safety First</strong><span>Certified & tested</span></div>
+        </div>
+        <div class="feature-item reveal">
+            <span class="feature-icon">🔄</span>
+            <div><strong>Easy Returns</strong><span>30-day guarantee</span></div>
+        </div>
+        <div class="feature-item reveal">
+            <span class="feature-icon">💝</span>
+            <div><strong>Gift Wrapping</strong><span>Available on checkout</span></div>
+        </div>
+    </div>
+
+    <!-- ═══════════════════════════════════════ SHOP ═══ -->
+    <section id="shop" class="shop">
+        <div class="section-header reveal">
+            <span class="section-tag">Categories</span>
+            <h2>Find the Perfect Toy</h2>
+            <p>Something magical for every age, every mood, every adventure.</p>
+        </div>
+
+        <div class="shop-grid">
+
+            <!-- Card 1: Plush -->
+            <div class="product-card reveal" style="--card-color: #FFB5A7; --card-color-light: #FFD9D2;" data-delay="0">
+                <div class="card-badge">Bestseller</div>
+                <div class="card-emoji-art">
+                    <div class="emoji-stage bear-stage">
+                        <div class="big-emoji bear-emoji">🧸</div>
+                        <div class="emoji-shadow"></div>
+                        <div class="sparkle s1">✦</div>
+                        <div class="sparkle s2">✦</div>
+                        <div class="sparkle s3">✦</div>
+                    </div>
+                </div>
+                <div class="card-info">
+                    <span class="card-category">Soft & Cuddly</span>
+                    <h3>Plush Friends</h3>
+                    <p class="card-desc">Huggable companions for bedtime adventures.</p>
+                    <div class="card-footer">
+                        <span class="price">From $12</span>
+                        <a href="#contact" class="btn-card ripple">Explore</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2: Educational -->
+            <div class="product-card reveal" style="--card-color: #A9DEF9; --card-color-light: #D4EFFC;" data-delay="1">
+                <div class="card-emoji-art">
+                    <div class="emoji-stage edu-stage">
+                        <div class="big-emoji">🧩</div>
+                        <div class="emoji-shadow"></div>
+                        <div class="sparkle s1">✦</div>
+                        <div class="sparkle s4">✦</div>
+                    </div>
+                </div>
+                <div class="card-info">
+                    <span class="card-category">Educational</span>
+                    <h3>Learn & Grow</h3>
+                    <p class="card-desc">Puzzles and kits that turn play into learning.</p>
+                    <div class="card-footer">
+                        <span class="price">From $18</span>
+                        <a href="#contact" class="btn-card ripple">Explore</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3: Games -->
+            <div class="product-card reveal" style="--card-color: #E4C1F9; --card-color-light: #F2E0FC;" data-delay="2">
+                <div class="card-badge" style="background: var(--card-color);">New</div>
+                <div class="card-emoji-art">
+                    <div class="emoji-stage games-stage">
+                        <div class="big-emoji">🎲</div>
+                        <div class="emoji-shadow"></div>
+                        <div class="sparkle s2">✦</div>
+                        <div class="sparkle s3">✦</div>
+                    </div>
+                </div>
+                <div class="card-info">
+                    <span class="card-category">Interactive</span>
+                    <h3>Family Games</h3>
+                    <p class="card-desc">Board games for laugh-filled family nights.</p>
+                    <div class="card-footer">
+                        <span class="price">From $24</span>
+                        <a href="#contact" class="btn-card ripple">Explore</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 4: Vehicles -->
+            <div class="product-card reveal" style="--card-color: #D0F4DE; --card-color-light: #E8FAF0;" data-delay="3">
+                <div class="card-emoji-art">
+                    <div class="emoji-stage vehicle-stage">
+                        <div class="big-emoji">🚀</div>
+                        <div class="emoji-shadow"></div>
+                        <div class="sparkle s1">✦</div>
+                        <div class="sparkle s3">✦</div>
+                    </div>
+                </div>
+                <div class="card-info">
+                    <span class="card-category">Vehicles</span>
+                    <h3>Zoom & Vroom</h3>
+                    <p class="card-desc">Rockets, cars & trains for the little explorer.</p>
+                    <div class="card-footer">
+                        <span class="price">From $15</span>
+                        <a href="#contact" class="btn-card ripple">Explore</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ══════════════════════════════════════ BANNER ═══ -->
+    <div class="banner-cta reveal">
+        <div class="banner-decoration">🌟</div>
+        <div class="banner-content">
+            <h2>Free shipping on your first order!</h2>
+            <p>Use code <strong>PIPIT10</strong> and save 10% on any purchase.</p>
+        </div>
+        <a href="#contact" class="btn-primary ripple">Claim Now</a>
+        <div class="banner-decoration">🎁</div>
+    </div>
+
+    <!-- ═══════════════════════════════════════ ABOUT ═══ -->
+    <section id="about" class="about">
+        <div class="about-bg-shape"></div>
+
+        <div class="about-container">
+            <div class="about-visual reveal">
+                <!-- Large emoji illustration collage -->
+                <div class="about-collage">
+                    <div class="collage-card collage-1">
+                        <span class="collage-emoji">🧸</span>
+                        <span class="collage-label">Soft & Safe</span>
+                    </div>
+                    <div class="collage-card collage-2">
+                        <span class="collage-emoji">🌈</span>
+                        <span class="collage-label">Colorful</span>
+                    </div>
+                    <div class="collage-card collage-3">
+                        <span class="collage-emoji">🧩</span>
+                        <span class="collage-label">Educational</span>
+                    </div>
+                    <div class="collage-card collage-4">
+                        <span class="collage-emoji">⭐</span>
+                        <span class="collage-label">5-Star Rated</span>
+                    </div>
+                    <div class="collage-center">
+                        <span class="collage-center-emoji">🎉</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about-content reveal reveal-right">
+                <span class="section-tag">Our Story</span>
+                <h2>Born from a Love of Play</h2>
+                <p>PipIt started with a simple belief: every child deserves toys that fire up their imagination, not
+                    just their screen time. We scouredthe world for designs that are beautiful, safe, and genuinely fun.
+                </p>
+                <p>Today, we're a family of toy-lovers bringing that same magic to homes everywhere — carefully curating
+                    every single item so parents can shop with confidence and kids can play without limits.</p>
+                <div class="about-values">
+                    <div class="value-chip">🌱 Eco-Friendly</div>
+                    <div class="value-chip">🛡️ Safety Tested</div>
+                    <div class="value-chip">🎨 Design-Led</div>
+                    <div class="value-chip">💌 Made with Love</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ════════════════════════════════════ TESTIMONIALS ═══ -->
+    <section class="testimonials">
+        <div class="section-header reveal">
+            <span class="section-tag">Reviews</span>
+            <h2>Parents Love PipIt</h2>
+        </div>
+        <div class="testimonials-grid">
+            <div class="testimonial-card reveal">
+                <div class="stars">★★★★★</div>
+                <p>"My daughter hasn't put down her plush rabbit since it arrived. The quality is incredible and
+                    shipping was so fast!"</p>
+                <div class="testimonial-author"><span class="author-avatar">👩</span><strong>Sarah M.</strong></div>
+            </div>
+            <div class="testimonial-card reveal">
+                <div class="stars">★★★★★</div>
+                <p>"PipIt's puzzle set turned screen time into family time. Our son is obsessed and learning so much
+                    while having fun."</p>
+                <div class="testimonial-author"><span class="author-avatar">👨</span><strong>David K.</strong></div>
+            </div>
+            <div class="testimonial-card reveal">
+                <div class="stars">★★★★★</div>
+                <p>"The best gifting experience! Beautiful packaging, premium toys — every birthday purchase from now on
+                    will be from PipIt."</p>
+                <div class="testimonial-author"><span class="author-avatar">👩</span><strong>Priya N.</strong></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════ CONTACT ═══ -->
+    <section id="contact" class="contact">
+        <div class="contact-decoration">
+            <div class="contact-blob-1"></div>
+            <div class="contact-blob-2"></div>
+        </div>
+
+        <div class="contact-box reveal">
+            <div class="contact-icon">💌</div>
+            <h2>Say Hello!</h2>
+            <p>Questions, partnerships, or just want to talk toys? We'd love to hear from you.</p>
+
+            <form id="contact-form" class="contact-form" novalidate>
+                <div class="input-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required placeholder="Your wonderful name">
+                </div>
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required placeholder="hello@example.com">
+                </div>
+                <div class="input-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="4" required
+                        placeholder="Tell us what's on your mind…"></textarea>
+                </div>
+                <button type="submit" class="btn-primary ripple" id="submit-btn">
+                    <span class="btn-text">Send Message</span>
+                    <span class="btn-icon">→</span>
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- ══════════════════════════════════════ FOOTER ═══ -->
+    <footer>
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <div class="logo footer-logo">
+                    <span class="logo-pip">Pip</span><span class="logo-it">It</span>
+                    <div class="logo-dot"></div>
+                </div>
+                <p>Making childhood magical, one toy at a time.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Instagram" class="social-btn">📷</a>
+                    <a href="#" aria-label="Facebook" class="social-btn">💙</a>
+                    <a href="#" aria-label="Pinterest" class="social-btn">📌</a>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <div class="footer-col">
+                    <h4>Shop</h4>
+                    <a href="#shop">Plush Toys</a>
+                    <a href="#shop">Educational</a>
+                    <a href="#shop">Games</a>
+                    <a href="#shop">Vehicles</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Info</h4>
+                    <a href="#about">About Us</a>
+                    <a href="#contact">Contact</a>
+                    <a href="#">Shipping Policy</a>
+                    <a href="#">Returns</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 PipIt Toys · Spreading joy globally 🌟</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
